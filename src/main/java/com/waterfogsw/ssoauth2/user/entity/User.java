@@ -72,4 +72,16 @@ public class User {
         this.providerType = providerType;
         this.roleType = roleType;
     }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public ProviderType getProviderType() {
+        return providerType;
+    }
 }
