@@ -6,7 +6,7 @@ import com.waterfogsw.ssoauth2.oauth.entity.UserPrincipal;
 import com.waterfogsw.ssoauth2.oauth.exception.OAuthProviderMissMatchException;
 import com.waterfogsw.ssoauth2.oauth.info.OAuth2UserInfo;
 import com.waterfogsw.ssoauth2.oauth.info.OAuth2UserInfoFactory;
-import com.waterfogsw.ssoauth2.oauth.repository.UserRepository;
+import com.waterfogsw.ssoauth2.user.repository.UserRepository;
 import com.waterfogsw.ssoauth2.user.entity.User;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.core.AuthenticationException;
@@ -15,8 +15,6 @@ import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDateTime;
 
 @Service
 public class CustomOAuth2UserService extends DefaultOAuth2UserService {

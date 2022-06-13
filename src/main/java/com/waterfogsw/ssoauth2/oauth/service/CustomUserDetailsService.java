@@ -1,7 +1,7 @@
 package com.waterfogsw.ssoauth2.oauth.service;
 
 import com.waterfogsw.ssoauth2.oauth.entity.UserPrincipal;
-import com.waterfogsw.ssoauth2.oauth.repository.UserRepository;
+import com.waterfogsw.ssoauth2.user.repository.UserRepository;
 import io.jsonwebtoken.lang.Assert;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
