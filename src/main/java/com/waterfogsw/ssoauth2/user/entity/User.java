@@ -1,5 +1,6 @@
 package com.waterfogsw.ssoauth2.user.entity;
 
+import com.waterfogsw.ssoauth2.common.entity.BaseTime;
 import com.waterfogsw.ssoauth2.oauth.entity.ProviderType;
 import com.waterfogsw.ssoauth2.oauth.entity.RoleType;
 
@@ -9,7 +10,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class User {
+public class User extends BaseTime {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
