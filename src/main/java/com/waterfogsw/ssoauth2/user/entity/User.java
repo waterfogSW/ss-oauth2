@@ -73,6 +73,14 @@ public class User {
         this.roleType = roleType;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String getUserId() {
         return userId;
     }
@@ -83,5 +91,13 @@ public class User {
 
     public ProviderType getProviderType() {
         return providerType;
+    }
+
+    public String getProfileImageUrl() {
+        return profileImageUrl;
+    }
+
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
     }
 }
